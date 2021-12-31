@@ -1,0 +1,89 @@
+/* COLORS USED; DARK THEME:
+ Background   -> #121212
+ Text         -> #DDD
+ Primary      -> #BB86FC
+ Secondary    -> #03DAC6
+*/
+
+
+body {
+  background-color: #121212;
+  color: #DDD;
+}
+
+.header {
+  margin: 15px;
+}
+
+.container {
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 1vw;
+  padding: 2vh 1vw;
+  border: solid 2px #BB86FC;
+}
+
+
+.controllers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-controllers {
+  flex-basis: 30%;
+}
+
+.filler-controllers {
+  flex-basis: 10%;
+}
+
+.right-controllers {
+  flex-basis: 30%;
+}
+
+.bottom-controllers {
+  flex-basis: 100%;
+}
+
+.slider {
+  margin: 10px;
+}
+
+.dropdown {
+  margin: 10px;
+  color: #000
+}
+
+.checklist {
+  margin: 10px;
+}
+
+.graphs-div {
+  display: flex;
+}
+
+.left-graphs {
+  flex-basis: 50%;
+}
+
+.right-graphs {
+  flex-basis: 50%;
+}
+
+.graph {
+  margin: 0 5px 0 0;
+  /* padding: 20px; */
+}
+
+#geo-graph-fig {
+  height: 80vh;
+}
+
+#total-line-graph {
+  height: 40vh;
+}
+
+#communities-line-graph {
+  height: 40vh;
+}

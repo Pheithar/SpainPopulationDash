@@ -145,6 +145,7 @@ graphs = html.Div(className="graphs-div",
 content_container = html.Div(
     className="container",
     children = [
+        dcc.Markdown("# Population growth in Spain plots"),
         input_controllers,
         graphs
     ]
@@ -195,7 +196,7 @@ def updateMap(year, gender, age, nationality, relative_value):
                                opacity=0.4,
                                hover_name="Nombre Comunidad",
                                hover_data={"Total"},
-                               title="Population map of Spain"
+                               title=f"Population map of Spain <br><sup>Year: {year}\t Age: {age}\t Nationality: {nationality}\t Gender: {gender}</sup>"
                                )
     fig.update_layout(margin={"r":0,"t":75,"l":0,"b":0})
     fig.update_layout(transition_duration=500)
@@ -219,7 +220,7 @@ def foo(gender, age, nationality):
     filtered_df = filtered_df.groupby("Año").sum().reset_index()
 
 
-    fig = px.line(filtered_df, x="Año", y="Total", title=f'Population change in Spain through the years(Age: {age}; Nationality: {nationality}; Gender: {gender})')
+    fig = px.line(filtered_df, x="Año", y="Total", title=f'Population change in Spain through the years <br><sup>Age: {age}\t Nationality: {nationality}\t Gender: {gender}</sup>')
 
     fig.update_layout(margin={"r":0,"t":75,"l":0,"b":0})
     fig.update_layout(transition_duration=500)

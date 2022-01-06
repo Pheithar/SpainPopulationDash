@@ -263,4 +263,4 @@ def display_click_community(clickData, gender, age, nationality):
 # APP RUN
 # ------------------------------------------------------------------------------
 
-app.run_server(debug=True)
+app.run_server(debug=False)

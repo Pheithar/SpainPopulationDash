@@ -11,6 +11,26 @@ body {
   color: #DDD;
 }
 
+/* unvisited link */
+a:link {
+ color: #BB86FC;
+}
+
+/* visited link */
+a:visited {
+ color: #03DAC6;
+}
+
+/* mouse over link */
+a:hover {
+ color: #03DAC6;
+}
+
+/* selected link */
+a:active {
+ color: #03DAC6;
+}
+
 .header {
   margin: 15px;
   margin-bottom: 30px;
@@ -87,4 +107,9 @@ body {
 
 #communities-line-graph {
   height: 40vh;
+}
+
+.footer {
+  margin: 15px;
+  margin-top: 60px;
 }

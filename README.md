@@ -20,4 +20,4 @@ In the map, the communities can be selected to display a detailed information pe
 
 ## Additional information
 
-The code is available at [this repository](https://github.com/Pheithar/SpainPopulationDash) and the deployed app is in [this webpage]().
+The code is available at [this repository](https://github.com/Pheithar/SpainPopulationDash) and the deployed app is in [this webpage](https://spain-population-dash.herokuapp.com/). All the code was made by Alejandro ['Pheithar'](https://github.com/Pheithar) Valverde Mahou, following multiple tutorials from [Dash](https://dash.plotly.com/) and [Heroku](https://www.heroku.com). Special thanks to the YouTube chanel [Charming Data](https://www.youtube.com/channel/UCqBFsuAz41sqWcFjZkqmJqQ) for his [tutorial on how to deploy to Heroku](https://www.youtube.com/watch?v=b-M2KQ6_bM4).

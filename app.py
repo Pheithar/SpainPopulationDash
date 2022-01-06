@@ -262,5 +262,5 @@ def display_click_community(clickData, gender, age, nationality):
 # ------------------------------------------------------------------------------
 # APP RUN
 # ------------------------------------------------------------------------------
-
-app.run_server(debug=False)
+if __name__ == '__main__':
+    app.run_server(debug=True)

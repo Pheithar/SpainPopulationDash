@@ -19,14 +19,17 @@ selected_communities = []
 
 
 app = dash.Dash(__name__)
-
+server = app.server
 
 # ------------------------------------------------------------------------------
 # LAYOUT
 # ------------------------------------------------------------------------------
 
-with open("README.md", "r") as f:
-    header_text = f.read()
+header_text = """
+# Population growth in Spain
+
+App made with [Dash](https://dash.plotly.com/) to learn how to do interactive plots to display information. The plot I decided to make was the map of population of Spain divided by communities. The data is obtained from the [INE](https://www.ine.es/index.htm), from ['Estadística del Padrón continuo']("https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177012&menu=ultiDatos&idp=1254734710990#).
+"""
 
 header = dcc.Markdown(className="header",
                       children=header_text)
